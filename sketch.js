@@ -11,8 +11,9 @@ function setup() {
   ellipseMode(CENTER);
   createElement('h5', 'it really really sucks.');
   createElement('h5', 'but I can give you some lucky number today :)');
-  createElement('h5', 'if you click that little purple circle');
-	h1 = createElement('h5', 'Your lucky number will be: ');
+  createElement('h5', 'you can click that emoji button to change the color that you like');
+  createElement('h5', 'and then click that little colorful circle');
+	h1 = createElement('h5', 'finally the lucky number will be: ');
 	bcolor = 0;
 	button = createButton("🫥");
 	button.mousePressed(changeColor);
@@ -28,7 +29,7 @@ function changeColor(){
 function mousePressed() {
 
   if (purpur2.float(mouseX, mouseY)) {
-  h1.html("Your lucky number will be: " + random(0, 100));
+  h1.html("finally the lucky number will be: " + random(0, 100));
 }
 }
 
